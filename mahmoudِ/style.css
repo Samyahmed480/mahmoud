@@ -1,0 +1,206 @@
+body {
+    font-family: 'Cairo', Tahoma, Arial, sans-serif;
+    background: url('background.jpg') center center/cover no-repeat fixed, linear-gradient(120deg, #E1CFC1 0%, #DFBAA7 100%);
+    margin: 0;
+    padding: 0;
+    color: #42131B;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    background: rgba(149, 1, 1, 0.92);
+    color: #E1CFC1;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 2px 16px #42131B55;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(2px);
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+    color: #E1CFC1;
+    text-shadow: 1px 2px 8px #95010155;
+}
+
+.about {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    color: #DFBAA7;
+    text-shadow: 0 1px 4px #95010133;
+}
+
+main {
+    max-width: 480px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 24px;
+    box-shadow: 0 4px 24px #42131B33;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    border: 2px solid #DFBAA7;
+    backdrop-filter: blur(2px);
+}
+
+.links-section h2 {
+    color: #950101;
+    margin-top: 0;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 1px 4px #42131B33;
+}
+
+#contact-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contact-links li {
+    background: rgba(74, 53, 68, 0.92);
+    margin-bottom: 1.2rem;
+    padding: 1.1rem 1rem;
+    border-radius: 14px;
+    box-shadow: 0 1px 8px #42131B22;
+    font-size: 1.13rem;
+    transition: background 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1.5px solid #DFBAA7;
+    cursor: pointer;
+    animation: fadeInUp 0.8s both;
+}
+
+#contact-links li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#contact-links li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+#contact-links li:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#contact-links svg {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    margin-left: 6px;
+    filter: drop-shadow(0 2px 4px #0002);
+}
+
+#contact-links a {
+    color: #DFBAA7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+#contact-links a:hover {
+    color: #E1CFC1;
+}
+
+footer {
+    text-align: center;
+    color: #4A3544;
+    padding: 1.5rem 0 1rem 0;
+    font-size: 1.08rem;
+    background: rgba(255,255,255,0.85);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 12px #42131B22;
+    border-top: 2px solid #DFBAA7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    letter-spacing: 0.2px;
+}
+
+footer p {
+    margin: 0.2em 0;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+footer a {
+    color: #950101;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s, text-shadow 0.2s;
+    padding: 0 0.2em;
+    border-radius: 6px;
+}
+
+footer a:hover {
+    color: #DFBAA7;
+    text-shadow: 0 2px 8px #95010144;
+    background: #42131B11;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 1.2rem 0.5rem 0.7rem 0.5rem;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        font-size: 1.1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .about {
+        font-size: 1rem;
+    }
+
+    main {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        border-radius: 14px;
+    }
+
+    #contact-links li {
+        font-size: 1rem;
+        padding: 0.8rem 0.7rem;
+        border-radius: 10px;
+        gap: 8px;
+    }
+
+    #contact-links svg {
+        width: 22px;
+        height: 22px;
+        margin-left: 3px;
+    }
+
+    footer {
+        font-size: 0.95rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 1rem 0 0.7rem 0;
+        gap: 0.15rem;
+    }
+}
